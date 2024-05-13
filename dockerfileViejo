@@ -1,0 +1,9 @@
+FROM maven
+
+WORKDIR ./spring-boot
+
+COPY ./spring-boot .
+
+RUN mvn install
+
+ENTRYPOINT [ "mvn", "spring-boot:run" ]
