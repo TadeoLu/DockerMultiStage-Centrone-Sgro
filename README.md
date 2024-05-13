@@ -1,2 +1,5 @@
 # DockerMultiStage-Centrone-Sgro
-GOD
+
+Para correr la imagen se debe:
+
+1. clonar el repositorio
