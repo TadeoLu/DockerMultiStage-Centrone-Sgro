@@ -2,6 +2,7 @@
 FROM maven:3.8.4-openjdk-17-slim AS builder
 WORKDIR /spring-boot
 COPY ./spring-boot .
+RUN mvn install
 RUN mvn -B -DskipTests clean package
 
 # Etapa de producción
