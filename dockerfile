@@ -1,5 +1,5 @@
 # Etapa de compilación
-FROM maven:3.8.4-openjdk-17-slim AS builder
+FROM maven:3.8.4-openjdk-17 AS builder
 WORKDIR /spring-boot
 COPY ./spring-boot .
 RUN mvn install
